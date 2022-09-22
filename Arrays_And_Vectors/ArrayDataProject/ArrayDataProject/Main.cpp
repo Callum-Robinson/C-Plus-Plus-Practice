@@ -10,7 +10,7 @@ using namespace std;
 */
 int main() {
 	cout << "Enter 5 integers:" << endl;
-	int numbers[5];
+	array<int, 5> numbers;
 
 	// Take 5 integers from input and read into array
 	for (int i = 0; i < 5; i++) {
