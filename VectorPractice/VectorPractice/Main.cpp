@@ -13,12 +13,12 @@ using namespace std;
 */
 int main() {
 	// create vector with 5 names (pets for this example)
-	vector<string> names(5);
-	names[0] = "Frankie";
-	names[1] = "Pretzel";
-	names[2] = "Moby";
-	names[3] = "Zack";
-	names[4] = "Rocco";
+	vector<string> names;
+	names.push_back("Frankie");
+	names.push_back("Pretzel");
+	names.push_back("Moby");
+	names.push_back("Zack");
+	names.push_back("Rocco");
 
 	// insert the lecturers name as the third element (John Baugh)
 	names.insert(names.begin() + 2, "John Baugh");
