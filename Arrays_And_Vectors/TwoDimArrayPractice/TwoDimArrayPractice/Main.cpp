@@ -7,7 +7,7 @@ using namespace std;
 	Simple two dimensional array practice
 	- Create 2D array of integers
 	- Print the array
-	- Print the rows of the array reversed
+	- Print the array reversed
 */
 int main() {
 	// Create 2D array of integers
@@ -25,8 +25,8 @@ int main() {
 
 	cout << endl << endl;
 
-	// Print the rows of the array reversed
-	for (int row = 0; row < 3; row++) {
+	// Print array reversed
+	for (int row = 2; row >= 0; row--) {
 		for (int col = 2; col >= 0; col--) {
 			cout << nums[row][col] << " ";
 		}
