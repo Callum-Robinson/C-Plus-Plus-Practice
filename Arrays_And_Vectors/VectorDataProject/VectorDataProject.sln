@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32901.82
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VectorDataProject", "VectorDataProject\VectorDataProject.vcxproj", "{CC33AFBC-D0AC-466B-AF99-6B487A33B577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Debug|x64.ActiveCfg = Debug|x64
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Debug|x64.Build.0 = Debug|x64
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Debug|x86.Build.0 = Debug|Win32
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Release|x64.ActiveCfg = Release|x64
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Release|x64.Build.0 = Release|x64
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Release|x86.ActiveCfg = Release|Win32
+		{CC33AFBC-D0AC-466B-AF99-6B487A33B577}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E711611-87FD-4933-9516-A59CB172EE57}
+	EndGlobalSection
+EndGlobal
