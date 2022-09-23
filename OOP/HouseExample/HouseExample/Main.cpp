@@ -8,17 +8,17 @@ using namespace std;
 */
 
 int main() {
-	House myHouse;
-	House yourHouse;
+	House myHouse(2, 6, "red");
+	House yourHouse(3, 8, "grey");
 
-	myHouse.setNumStories(2);
+	/*myHouse.setNumStories(2);
 	myHouse.setNumWindows(6);
 	myHouse.setColour("red");
 
 	yourHouse.setNumStories(3);
 	yourHouse.setNumWindows(8);
-	yourHouse.setColour("grey");
+	yourHouse.setColour("grey");*/
 
-	myHouse.printHouseData();
-	yourHouse.printHouseData();
+	myHouse.print();
+	yourHouse.print();
 }
