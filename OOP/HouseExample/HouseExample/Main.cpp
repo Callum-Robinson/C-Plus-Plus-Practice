@@ -6,7 +6,6 @@ using namespace std;
 /*
 	Simple OOP exerice creating and implementing a House object
 */
-void printHouseData(const House& house);
 
 int main() {
 	House myHouse;
@@ -20,11 +19,6 @@ int main() {
 	yourHouse.setNumWindows(8);
 	yourHouse.setColour("grey");
 
-	printHouseData(myHouse);
-	printHouseData(yourHouse);
-}
-
-void printHouseData(const House& house) {
-	cout << "This house has " << house.getNumStories() << " stories, "
-		<< house.getNumWindows() << " windows and is " << house.getColour() << endl;
+	myHouse.printHouseData();
+	yourHouse.printHouseData();
 }

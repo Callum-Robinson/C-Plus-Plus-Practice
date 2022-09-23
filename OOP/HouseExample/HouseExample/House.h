@@ -18,6 +18,8 @@ public:
 
 	string getColour() const;
 
+	void printHouseData();
+
 private:
 	int numStories;
 	int numWindows;
