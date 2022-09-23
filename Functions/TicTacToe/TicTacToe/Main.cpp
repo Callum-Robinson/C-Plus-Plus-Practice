@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -7,8 +9,9 @@ const int ROWS = 3;
 const int COLS = 3;
 
 
-//Tic Tac Toe challenge: create a working game of Tic Tac Toe
-//Functions needed to:
+// Tic Tac Toe challenge: create a working game of Tic Tac Toe
+// Updated with random staring turn
+// Functions needed to:
 // - run the game loop
 void runGame();
 // - initialise the game board
@@ -34,8 +37,9 @@ void runGame() {
 	string board[ROWS][COLS];
 	// create a winner string and set to empty
 	string winner = "";
-	// set the inital turn to X
-	bool xTurn = true;
+	// set the inital turn randomly
+	srand(time(nullptr)); // use current time EPOCH as seed
+	bool xTurn = rand() % 2;
 
 	// call the initialise board function to setup the board
 	initialiseBoard(board);
