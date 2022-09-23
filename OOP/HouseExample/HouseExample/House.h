@@ -18,7 +18,7 @@ public:
 
 	string getColour() const;
 
-	void printHouseData();
+	void print() const;
 
 private:
 	int numStories;
