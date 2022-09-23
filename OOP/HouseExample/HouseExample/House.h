@@ -1,3 +1,6 @@
+#ifndef HOUSE_H // include guards
+#define HOUSE_H
+
 #include <string>
 using namespace std;
 
@@ -20,3 +23,5 @@ private:
 	int numWindows;
 	string colour;
 };
+
+#endif
