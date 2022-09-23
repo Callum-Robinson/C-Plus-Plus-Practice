@@ -26,6 +26,6 @@ string House::getColour() const {
 }
 
 void House::printHouseData() {
-	cout << "This house has " << this->getNumStories() << " stories, "
-		<< this->getNumWindows() << " windows and is " << this->getColour() << endl;
+	cout << "This house has " << numStories << " stories, "
+		<< numWindows << " windows and is " << colour << endl;
 }
