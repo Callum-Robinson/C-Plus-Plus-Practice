@@ -18,18 +18,30 @@ int main()
 	names.at(3) = "Karen";
 	names.at(4) = "Smitty";
 
-	for (string name : names)
-	{
+	for (string name : names) {
 		cout << name << endl;
 	}
 
-	try
-	{
+
+	// Out of range excpetion
+	try {
 		names.at(5) = "Tyler";
 	}
-	catch (const out_of_range& err)
-	{
+	catch (const out_of_range& err) {
 		cout << err.what() << endl;
 	}
 
+	cout << endl;
+
+
+
+	// Length error
+	vector<int> nums;
+	cout << "Trying to make the vector 1 larger than its max:" << endl;
+	try {
+		nums.resize(nums.max_size() + 1);
+	}
+	catch (const length_error& err) {
+		cout << err.what() << endl;
+	}
 }
