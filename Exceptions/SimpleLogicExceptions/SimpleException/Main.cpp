@@ -6,7 +6,7 @@ using namespace std;
 
 
 /*
-	Simple try-catch blocks
+	Simple try-catch blocks for logic exceptions
 */
 int main()
 {
