@@ -6,7 +6,7 @@ using namespace std;
 
 
 /*
-	Simple handled out of range exception
+	Simple try-catch blocks
 */
 int main()
 {
@@ -28,7 +28,7 @@ int main()
 		names.at(5) = "Tyler";
 	}
 	catch (const out_of_range& err) {
-		cout << err.what() << endl;
+		cerr << err.what() << endl;
 	}
 
 	cout << endl;
@@ -42,6 +42,6 @@ int main()
 		nums.resize(nums.max_size() + 1);
 	}
 	catch (const length_error& err) {
-		cout << err.what() << endl;
+		cerr << err.what() << endl;
 	}
 }
