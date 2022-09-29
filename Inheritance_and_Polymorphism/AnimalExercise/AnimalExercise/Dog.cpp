@@ -18,3 +18,7 @@ void Dog::digHole() const {
 string Dog::makeNoise() const {
 	return "Bork";
 }
+
+string Dog::eat() const {
+	return "I love dog food";
+}

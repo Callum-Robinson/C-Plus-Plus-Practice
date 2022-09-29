@@ -5,7 +5,7 @@
 using namespace std;
 
 /*
-	Simple inheritance exercise
+	Simple inheritance and polymorphism exercise
 */
 int main() {
 	Dog dog("Frankie", 40, "Dachshund");
@@ -15,4 +15,15 @@ int main() {
 	cout << "Dog's breed: " << dog.getBreed() << endl;
 	cout << "Dog's noise: " << dog.makeNoise() << endl;
 	dog.digHole();
+	cout << endl;
+
+	// Polymorphism 
+	cout << "Polymorphism Example" << endl;
+	Animal* dogPtr = new Dog("Zack", 80, "Labrador");
+	// Use of the virtual keyword in Animal.h gives us the correct makeNoise at runtime
+	cout << dogPtr->getName() << " " << dogPtr->makeNoise() << "s " << endl;
+	cout << "and thinks " << dogPtr->eat() << endl;
+
+	delete dogPtr;
+	dogPtr = nullptr;
 }
