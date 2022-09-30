@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Animal.h"
 #include "Dog.h"
+#include "Cat.h"
 
 using namespace std;
 
 /*
-	Simple inheritance and polymorphism exercise
+	Simple inheritance and polymorphism exercises
 */
 int main() {
 	Dog dog("Frankie", 40, "Dachshund");
@@ -26,4 +27,17 @@ int main() {
 
 	delete dogPtr;
 	dogPtr = nullptr;
+
+	cout << endl;
+
+
+	// Cat exercise
+	cout << "Now we have a cat" << endl;
+	Animal* catPtr = new Cat("Pablo", 3);
+	cout << catPtr->getName() << " " << catPtr->makeNoise() << "s" << endl;
+	cout << "Feed the cat: " << catPtr->eat() << endl;
+	((Cat*)catPtr)->chaseMouse(); // Note the casting to a Cat pointer to access the child method
+
+	delete catPtr;
+	catPtr = nullptr;
 }
