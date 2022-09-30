@@ -36,7 +36,9 @@ int main() {
 	Animal* catPtr = new Cat("Pablo", 3);
 	cout << catPtr->getName() << " " << catPtr->makeNoise() << "s" << endl;
 	cout << "Feed the cat: " << catPtr->eat() << endl;
+
 	((Cat*)catPtr)->chaseMouse(); // Note the casting to a Cat pointer to access the child method
+	(reinterpret_cast<Cat*>(catPtr))->chaseMouse(); // An alternate way of casting
 
 	delete catPtr;
 	catPtr = nullptr;
