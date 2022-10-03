@@ -7,7 +7,7 @@ using namespace std;
 
 /*
 	Simple exercise using the count algorithm for a D20 example
-	And including an example of replace
+	And including an example of replace and sort
 */
 
 void fillVector(vector<int>& myVector);
@@ -30,6 +30,14 @@ int main() {
 	/*cout << endl << "Replace all 1s with 0s" << endl;
 	replace(myVector.begin(), myVector.end(), 1, 0);
 	printVector(myVector);*/
+
+
+	/*
+		An example of sort
+	*/
+	cout << endl << "Sort the vector" << endl;
+	sort(myVector.begin(), myVector.end());
+	printVector(myVector);
 }
 
 /*
@@ -49,7 +57,7 @@ void fillVector(vector<int>& myVector) {
 	Prints each 'roll' in the vector
 */
 void printVector(const vector<int>& myVector) {
-	cout << "The Rolls:" << endl;
+	cout << "The rolls:" << endl;
 	for (int element : myVector) {
 		cout << element << endl;
 	}
@@ -59,9 +67,13 @@ void printVector(const vector<int>& myVector) {
 	Counts all 1s and 20s and prints
 */
 void countCritsAndFails(const vector<int>& myVector) {
+	cout << "------------------------------------" << endl;
+
 	int numNat20s = count(myVector.begin(), myVector.end(), 20);
 	cout << "Number of critical hits = " << numNat20s << endl;
 
 	int numNat1s = count(myVector.begin(), myVector.end(), 1);
-	cout << "Number of critical fails = " << numNat20s << endl;
+	cout << "Number of critical fails = " << numNat1s << endl;
+
+	cout << "------------------------------------" << endl;
 }
