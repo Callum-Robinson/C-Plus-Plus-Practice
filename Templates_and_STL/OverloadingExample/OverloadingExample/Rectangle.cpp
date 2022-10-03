@@ -50,3 +50,7 @@ void Rectangle::operator=(const Rectangle& other) {
 	length = other.length;
 	width = other.width;
 }
+
+bool Rectangle::operator!=(const Rectangle& other) const {
+	return length != other.length || width != other.width;
+}

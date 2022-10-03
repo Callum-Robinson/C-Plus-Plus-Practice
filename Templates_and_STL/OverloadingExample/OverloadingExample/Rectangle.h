@@ -15,6 +15,7 @@ public:
 	bool operator==(const Rectangle& other) const;
 	Rectangle operator+(const Rectangle& other) const;
 	void operator=(const Rectangle& other);
+	bool operator!=(const Rectangle& other) const;
 private:
 	double length;
 	double width;

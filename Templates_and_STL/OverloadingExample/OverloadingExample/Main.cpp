@@ -14,6 +14,7 @@ int main() {
 	resultRect = rect1 + rect2;
 
 	cout << "(rect1 == rect3)? " << boolalpha << (rect1 == rect3) << endl;
+	cout << "(rect1 != rect2)? " << boolalpha << (rect1 != rect2) << endl;
 	
 	cout << "Result rectangle length * width: " << resultRect.getLength() << " * " << resultRect.getWidth() << endl;
 	cout << "Result rectangle area: " << resultRect.area() << endl;
