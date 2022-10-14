@@ -2,4 +2,14 @@
 
 This repo is a collection of exercises and challenges I have been working through while following the C++ Developer course by John Baugh
 
-Once I have worked through this course I will be adding readMes to the different sections to help when revisiting
+The Sections include:
+ - Control Statements
+ - Arrays and Vectors
+ - Functions
+ - Classes and Objects Introduction
+ - Exceptions and Debugging
+ - Pointers
+ - File Input and Output
+ - Inheritance and Polymorphism
+ - Templates, the STL (and other skills)
+ - Fundamentals of Data Structures
