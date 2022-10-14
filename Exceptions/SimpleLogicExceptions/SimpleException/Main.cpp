@@ -23,7 +23,7 @@ int main()
 	}
 
 
-	// Out of range excpetion
+	// Out of range exception
 	try {
 		names.at(5) = "Tyler";
 	}
